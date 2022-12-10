@@ -1,0 +1,270 @@
+:root {
+  --button-color: #001d3d;
+  --icon-color: hsl(0, 0%, 90%);
+  --title-color: hsl(0, 0%, 15%);
+  --text-color: hsl(0, 0%, 35%);
+  --text-color-light: hsl(0, 0%, 55%);
+  --container-color: #e9d79581;
+  --border-color: hsl(0, 0%, 94%);
+  --body-color: hsl(206, 4%, 97%);
+}
+
+body{
+  background: rgb(244,118,45);
+background: linear-gradient(0deg, rgba(244,118,45,1) 0%, rgba(255,215,138,1) 100%);
+  /* background: rgb(255,215,138);
+  background: linear-gradient(0deg, rgba(255,215,138,1) 0%, rgba(244,118,45,1) 100%); */
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+/* HOME */
+
+.profile h1{
+  font-size: 37px;
+  margin-bottom: 2rem;
+}
+
+.profile span{
+  font-size: 26px;
+}
+
+.profile p{
+  font-size: 18px;
+  margin-top: 1rem;
+}
+
+.photo{
+  max-width: 280px;
+}
+
+.col-lg-5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-btn{
+  border: 3px solid var(--button-color);
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 9rem;
+  height: 3rem;
+  margin-top: 4rem;
+}
+
+.contact-link{
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+}
+
+.contact-link:hover{
+  color: #073b4c;
+}
+
+
+/* SKILLS  */
+
+.skills{
+  text-align: center;
+  background-color: var(--container-color);
+  padding: 3rem;
+  border-radius: 10px;
+  max-width: 40rem;
+  margin: 5rem auto;
+}
+
+.skills h1{
+  margin-bottom: 2rem;
+}
+
+.skills-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-brands{
+  font-size: 5rem;
+  transform: translate(0);
+  transition: 0.24s;
+}
+
+.icon p{
+  text-align: center;
+}
+
+.fa-brands:hover{
+  transform: scale(1.13);
+}
+
+.git{
+  color: #e85d04;
+}
+
+.html{
+  color: #ff7d00;
+}
+
+.css{
+  color: #118ab2;
+}
+
+.js{
+  color: #ffb703;
+}
+
+.react{
+  color: #8ecae6;
+}
+
+
+
+/* PROJECTS */
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  background-color: var(--container-color);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.projects h1{
+  margin-bottom: 2rem;
+}
+
+.projects-container{
+  display: grid;
+  row-gap: 2rem;
+}
+
+.card{
+  width: 360px;
+  transform: translate(0);
+  transition: 0.24s;
+}
+
+.card:hover{
+  transform: scale(1.07);
+  box-shadow: 0 0 10px #0000005b;
+  cursor: pointer;
+}
+
+
+
+/* CONTACT */
+
+.contact{
+  background-color: black;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+form{
+  width: 20rem;
+}
+
+.social{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.social-icon{
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.github:hover{
+  color: #560bad;
+}
+
+.linkedin:hover{
+  color: #0077b6;
+}
+
+
+
+@media screen and (min-width: 992px) {
+
+  /* HOME */
+  .profile h1{
+    font-size: 45px;
+  }
+
+  .row{
+    gap: 3rem;
+  }
+
+  .profile span{
+    font-size: 30px;
+  }
+
+  .profile p{
+    font-size: 20px;
+  }
+
+  .contact-btn{
+    width: 12rem;
+    height: 3.5rem;
+  }
+
+  .contact-link{
+    font-size: 20px;
+  }
+
+
+  /* SKILLS */
+
+  .skills-container{
+    gap: 5rem;
+  }
+
+  .icon .fa-brands{
+    font-size: 6rem;
+  }
+
+
+  /* PROJECTS */
+
+  .projects-container{
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+    column-gap: 3rem;
+  }
+
+  .card{
+    width: 400px;
+  }
+
+
+  /* CONTACT */
+
+  form{
+    width: 30rem;
+  }
+
+}
+

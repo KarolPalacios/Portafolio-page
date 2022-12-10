@@ -1,7 +1,6 @@
-import { useState } from 'react'
 import './App.css'
 import Home from './Components/Home'
-// import NavBar from './Components/NavBar'
+import NavBar from './Components/NavBar'
 import Projects from './Components/Projects'
 import Container from 'react-bootstrap/Container';
 import Skills from './Components/Skills'
@@ -13,7 +12,7 @@ function App() {
 
   return (
     <div className="App" >
-      {/* <NavBar/> */}
+      <NavBar/>
       <Container className="my-5">
         <main className="main">
               <Home/>

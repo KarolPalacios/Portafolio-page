@@ -20,8 +20,13 @@ background: linear-gradient(0deg, rgba(244,118,45,1) 0%, rgba(255,215,138,1) 100
 
 
 
+/* NAVBAR */
 
-
+Nav .me-auto{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
 
 
 /* HOME */

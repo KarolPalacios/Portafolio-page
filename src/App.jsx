@@ -1,10 +1,10 @@
 import './App.css'
 import Home from './Components/Home'
-import NavBar from './Components/NavBar'
 import Projects from './Components/Projects'
 import Container from 'react-bootstrap/Container';
 import Skills from './Components/Skills'
 import ContactMe from './Components/ContactMe'
+import NavBar from './Components/NavBar';
 
 
 function App() {

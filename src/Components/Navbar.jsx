@@ -18,7 +18,7 @@ const Navbar = () => {
                     </li>
 
                     <li className="nav-item">
-                        <a href="portafolio">Portafolio</a>
+                        <a href="#portafolio">Portafolio</a>
                     </li>
                 </ul>
             </nav>

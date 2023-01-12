@@ -182,20 +182,53 @@ nav {
 
 .projects-container{
   display: grid;
+  align-items: center;
   row-gap: 2rem;
 }
 
-.card{
+.p-card {
+  background-color: transparent;
   width: 360px;
-  transform: translate(0);
-  transition: 0.24s;
+  height: 172px;
+  perspective: 1000px;
 }
 
-.card:hover{
-  transform: scale(1.07);
-  box-shadow: 0 0 10px #0000005b;
-  cursor: pointer;
+.p-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
 }
+
+.p-card:hover .p-card-inner {
+  transform: rotateY(180deg);
+}
+
+.p-card-front,
+.p-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.p-card-front {
+  background-color: #d69354;
+}
+
+.p-card-front img{
+  width: 360px;
+}
+
+.p-card-back {
+  background-color: #d69354;
+  transform: rotateY(180deg);
+}
+
 
 
 
@@ -293,10 +326,13 @@ form{
     column-gap: 3rem;
   }
 
-  .card{
-    width: 400px;
+  .p-card{
+    width: 360px;
   }
 
+  .p-card-front img {
+    width: 360px;
+  }
 
   /* CONTACT */
 

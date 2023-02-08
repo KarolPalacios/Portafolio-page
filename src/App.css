@@ -71,6 +71,28 @@ nav {
   margin-top: 1rem;
 }
 
+.cv {
+  display: flex;
+  justify-content: center;
+  font-size: 19px;
+}
+
+.cv a {
+  text-decoration: none;
+  color: rgb(12, 12, 12);
+  border: 1px solid var(--button-color);
+  padding: 7px;
+}
+
+.cv i {
+  color: #f17528;
+}
+
+.cv a:hover{
+  color: #073b4c;
+
+}
+
 .photo{
   max-width: 280px;
 }

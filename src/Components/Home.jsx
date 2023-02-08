@@ -1,3 +1,4 @@
+import cv from "../assets/cv/CV karol palacios.pdf";
 import React from 'react';
 import photo from '../assets/photo.png';
 import { Row, Col } from 'react-bootstrap';
@@ -13,6 +14,11 @@ const Home = () => {
                         <p>
                             Soy desarrolladora front-end, desarrollo aplicaciones y plataformas web. Constantemente mejoro mis habilidades creando proyectos y asumiendo retos que alimentan mi conocimiento.
                         </p>
+                        <div className="cv">
+                            <a href={cv} download={cv}>
+                                <i className="fa-solid fa-file"></i> Descargar CV
+                            </a>
+                        </div>
                     </div>
                 </Col>
                 <Col lg={5}>

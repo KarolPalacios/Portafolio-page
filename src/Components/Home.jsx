@@ -1,6 +1,6 @@
 import cv from "../assets/cv/CV karol palacios.pdf";
 import React from 'react';
-import photo from '../assets/photo.png';
+import photo from '../assets/undraw_building_websites_i78t.svg';
 import { Row, Col } from 'react-bootstrap';
 
 const Home = () => {
